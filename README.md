@@ -1,4 +1,4 @@
 # RF1
-- Dokumentáció Gitlabos privát RF1 projekthez.
-- Commitok mellékelt pdf fájlban.
+- Documentation for a private Gitlab System Development project.
+- Commits are in their folder.
 - heroku deploy: https://etel-ib153i-8-2021.herokuapp.com/
