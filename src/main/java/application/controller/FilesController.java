@@ -71,14 +71,6 @@ public class FilesController {
             s3.putObject(bucketName,filename,file1);
             file1.delete();
 
-
-           /* byte[] bytes = file.getBytes();
-            String insPath = "src/main/resources/static/img/products/" + fname+".png";
-            Files.write(Paths.get(insPath), bytes);
-            insPath = "target/classes/static/img/products/" + fname+".png";
-            Files.write(Paths.get(insPath), bytes);
-
-            System.err.print("Uploaded the file successfully: " + file.getOriginalFilename());*/
         } catch (Exception e) {
             System.err.print("Could not upload the file: " + file.getOriginalFilename() + "!");
         }
@@ -105,14 +97,6 @@ public class FilesController {
             fos.write(file.getBytes());
             s3.putObject(bucketName,filename,file1);
             file1.delete();
-
-           /* byte[] bytes = file.getBytes();
-            String insPath = "src/main/resources/static/img/profiles/" + fname+".png";
-            Files.write(Paths.get(insPath), bytes);
-            insPath = "target/classes/static/img/profiles/" + fname+".png";
-            Files.write(Paths.get(insPath), bytes);
-
-            System.err.print("Uploaded the file successfully: " + file.getOriginalFilename());*/
 
         } catch (Exception e) {
             System.err.print("Could not upload the file: " + file.getOriginalFilename() + "!"+e);
